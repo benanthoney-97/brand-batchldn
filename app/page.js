@@ -3,12 +3,12 @@ import React, { useState, useEffect } from "react";
 import Script from "next/script";
 
 export default function VoicePage() {
-  const agentId = process.env.NEXT_PUBLIC_ELEVENLABS_AGENT_ID || "agent_6501k3rkhzm7fatajhy574g0q7qg";
-  const heroLogo = process.env.NEXT_PUBLIC_BRAND_LOGO_URL || "https://ielaigfiyikzxqecyplz.supabase.co/storage/v1/object/public/business_logos/puresport.png";
+  const agentId = process.env.NEXT_PUBLIC_ELEVENLABS_AGENT_ID || "agent_3501k3v27092erv8bz40nm47p6he";
+  const heroLogo = process.env.NEXT_PUBLIC_BRAND_LOGO_URL || "https://ielaigfiyikzxqecyplz.supabase.co/storage/v1/object/public/business_logos/Batch_Logotype_1.avif";
   const headerLogo = process.env.NEXT_PUBLIC_HEADER_LOGO_URL || "https://ielaigfiyikzxqecyplz.supabase.co/storage/v1/object/public/UI_elements/Frame_5-removebg-preview.png";
-  const businessName = process.env.NEXT_PUBLIC_BRAND_NAME || "Puresport";
+  const businessName = process.env.NEXT_PUBLIC_BRAND_NAME || "Batch";
   const businessTagline =
-    process.env.NEXT_PUBLIC_BRAND_TAGLINE || "Leading Performance Supplement and Hydration Brand";
+    process.env.NEXT_PUBLIC_BRAND_TAGLINE || "Casual Suits Made in LDN. Just for you.";
 
   const links = [
     { label: "Get a quote", href: "#" },
@@ -125,7 +125,6 @@ export default function VoicePage() {
       {/* Global override: fix mobile body background to blue, desktop to white */}
       <style jsx global>{`
         body {
-          background: black !important;   /* mobile/tablet default */
         }
         @media (min-width: 900px) {
           body { background: #ffffff !important; } /* desktop page background */
@@ -150,7 +149,7 @@ export default function VoicePage() {
         .page {
             min-height: 100vh;
   min-height: 100svh;  
-          background: var(--blue);        /* ensure page wrapper is blue */
+          background: #2b3040;        /* ensure page wrapper is blue */
           display: flex;
           justify-content: center;
           align-items: stretch;
@@ -162,7 +161,7 @@ export default function VoicePage() {
              starts near top (larger gap to reduce height) and reaches bottom */
         .container {
           width: 100%;
-          background: black !important;  /* ensure not overridden */
+          background: #2b3040 !important;  /* ensure not overridden */
           color: var(--text-blue);
           display: flex;
           flex-direction: column;
@@ -309,7 +308,7 @@ export default function VoicePage() {
   justify-content: center;       /* center contents horizontally */
   position: relative;            /* so we can absolutely position the kebab */
   background: white;
-  color: black;                /* blue text on white button */
+  color: #2b3040;                /* blue text on white button */
   padding: 22px 22px;            /* taller buttons */
   border-radius: 50px;           /* rounded corners */
   box-shadow: var(--btn-shadow);
@@ -347,7 +346,7 @@ export default function VoicePage() {
         /* DESKTOP: white around a centered blue container, reduced height */
         @media (min-width: 900px) {
           .page {
-            background: #e5e7eb; /* white page background */
+            background: #ffffffff; /* white page background */
           }
           .container {
             width: min(92vw, 820px);
@@ -358,7 +357,7 @@ export default function VoicePage() {
             border-top-right-radius: 22px;
             padding: 24px 24px 56px;
             box-shadow: 0 18px 48px rgba(12, 113, 195, 0.22);
-            background: black;
+            background: #2b3040;
           }
         }
       `}</style>
